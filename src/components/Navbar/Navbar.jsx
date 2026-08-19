@@ -8,8 +8,8 @@ function Navbar({ theme, toggleTheme }) {
     return (
         <header className="site-header">
             <nav className="navbar">
-                <div className="logo">SD</div>
-               
+                <div className="logo">ARM</div>
+                
                 <ul className={isMenuOpen ? "nav-links open" : "nav-links"}>
                     <li>
                       <NavLink to="/" onClick={() => setIsMenuOpen(false)} className={({ isActive }) => isActive ? 'active' : ''}>
@@ -32,14 +32,14 @@ function Navbar({ theme, toggleTheme }) {
                       </NavLink>
                     </li>
                 </ul>
- 
+
                 <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                     <button className="theme-toggle" onClick={toggleTheme}>
                         {theme === "dark" ? "☀️" : "🌙"}
                     </button>
- 
-                    <button
-                        className="menu-toggle"
+
+                    <button 
+                        className="menu-toggle" 
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         aria-label="Toggle navigation"
                     >
@@ -50,6 +50,6 @@ function Navbar({ theme, toggleTheme }) {
         </header>
     );
 }
- 
- 
+
+
 export default Navbar
