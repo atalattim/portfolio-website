@@ -30,7 +30,7 @@ description: 'Kanban task board',
 longDesc: 'A full-featured task manager with columns and drag-and-drop support.',
 tech: ['JavaScript', 'HTML'],
 category: 'design',
-featured: false,
+featured: true,
 liveUrl: '#',
 githubUrl: '#'
 }
